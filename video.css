@@ -1,0 +1,983 @@
+@charset "utf-8";
+
+
+body, html{
+	height: 100%;
+	margin: auto;
+	backface-visibility: hidden;
+}
+
+.portoContainer{
+	background:#f3f3f3;
+}
+
+/******************* HEADER *********************/
+.socialMedia{
+	background: black;
+	position: fixed;
+	width: 2%;
+	right: 0;
+	height: 200px;
+	z-index: 100;
+	top: 50%;
+	transform: translateY(-50%);
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+
+
+.socialImg{
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-top: 50%;
+	
+}
+
+header{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url(images/slider-bg2.jpg);
+	background-size: cover;
+	font-family: "Adam";
+	
+}
+
+ video{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50% , -50%);
+	z-index: 1;
+	
+}
+.videoOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.80);
+}
+
+.logoContainer{
+	margin-top: 1%;
+	position: relative;
+	height: 110px;
+}
+
+.logoContainer2{
+	margin-top: 1%;
+	position: relative;
+	height: 110px;
+}
+.logo{
+	position: absolute;
+	width: 90px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.logoCaption3, .logoCaption4{
+	font-family: "Adam";
+	font-size: 1em;
+	margin: 0;
+	transform: translateY(-50%);
+}
+
+
+.logoCaption{
+	margin: 0;
+	position: absolute;
+	font-family: "Adam";
+	color: #333;
+	left: 20%;
+	top: 50%;
+	font-size:  1em;
+	transform: translate(-100%,-50%);
+}
+
+.logoCaption3{
+	position: absolute;
+	color: #333;
+	left: 50%;
+	transform: translate(-100% , -50%);
+}
+.logoCaption2{
+	margin: 0;
+	font-family: "Adam";
+	position: absolute;
+	top: 50%;
+	font-size:  1em;
+	transform: translateY(-50%);
+	color: #0078ff;
+	left: 20%;
+	
+}
+
+.logoCaption4{
+	position: absolute;
+	color: #0078ff;
+	left: 50%;
+	
+}
+
+
+
+.links{
+	
+	font-family: "Adam";
+	width: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 40%;
+	margin: 0;
+	transform: translateY(-50%);
+	
+	
+}
+
+.links2{
+	
+	font-family: "Adam";
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	left: 0%;
+	margin: 0;
+	transform: translateY(-50%);
+	z-index: 10;
+	
+	
+}
+
+.links3{
+	
+	font-family: "Adam";
+	width: 50%;
+	
+	position: relative;
+	text-align: center;
+	top: 25%;
+	left: 0%;
+	margin: 0 auto 0 auto;
+	z-index: 10;
+	
+	
+}
+li{
+	position: relative;
+	display: inline;
+	padding-right: 6%;
+	
+	
+	font-size: 1em;
+	
+	
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.aboutSection{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+
+
+.linksMain{
+	position: absolute;
+	top: 0;
+	height: 10%;
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #f2f2f2;
+	z-index: 1000;
+}
+
+
+
+
+.menuFixed{
+	position: fixed;
+}
+
+.menuIcon{
+	height: 32px;
+	width: 32px;
+	background:url(icos/menu.png) center;
+	position: absolute;
+	display: none;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+a:hover{
+	color: #0078ff;
+}
+
+.videoText{
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50% , -50%);
+	
+	
+}
+.videoText1{
+	position: relative;
+	font-family: "Adam";
+	font-size: 1em;
+	
+}
+.videoText2{
+	line-height: 10px;
+	position: relative;
+	font-family: "Adam";
+	font-weight: bold;
+	font-size: 3em;
+	
+}
+.videoText3{
+	position: relative;
+	font-family: "Adam";
+	font-size: 1em;
+	
+}
+
+
+button:focus{
+	outline: 0;
+	
+}
+.quoteButton:hover,
+.quoteButton:focus {
+  box-shadow: 0 0.6em 0.5em -0.4em #0078ff;
+	border-color: #0078ff;
+	color: #0078ff;
+  transform: translate(-105%, -0.25em);
+}
+.seeButton:hover,
+.seeButton:focus {
+  box-shadow: 0 0.6em 0.5em -0.4em #0078ff;
+	border-color: #0078ff;
+	color: #0078ff;
+  transform: translate(5%, -0.25em);
+}
+
+.seeButton2:hover,
+.seeButton2:focus {
+  box-shadow: 0 0.6em 0.5em -0.4em #0078ff;
+	border-color: #0078ff;
+	color: #0078ff;
+  transform: translate(-50% , -0.25em, -0.25em);
+}
+
+.quoteButton {
+  	background: none;
+  	border: 2px solid white;
+	color: white;
+  	font: inherit;
+  	line-height: 1;
+  	margin: 0.5em;
+  	padding: 1em 2.8em;
+	position: absolute;
+	z-index: 3;
+	transition: 0.25s;
+	top: 70%;
+	left: 50%;
+	transform: translate(-105%);
+	
+}
+.seeButton {
+  	background: none;
+  	border: 2px solid white;
+	color: white;
+  	font: inherit;
+  	line-height: 1;
+  	margin: 0.5em;
+  	padding: 1em 2.8em;
+	position: absolute;
+	z-index: 3;
+	transition: 0.25s;
+	top: 70%;
+	left: 50%;
+	transform: translate(5%);
+	
+}
+
+.seeButton2 {
+  	background: none;
+  	border: 2px solid black;
+	color: black;
+  	font: inherit;
+  	line-height: 1;
+  	margin: 0.5em;
+  	padding: 1em 2.8em;
+	position: absolute;
+	z-index: 3;
+	transition: 0.25s;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/**************************************** ABOUT SECTION ********************************/
+
+.aboutBoxes{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 40%;
+	min-height: 40%;
+	max-height: 50%;
+	text-align: center;
+	z-index: 6;
+	
+	transition: 0.3s;
+	
+}
+
+
+
+.aboutButton{
+	opacity: 1;
+	position: relative;
+	border-radius: 20px;
+	z-index: 10;
+	width: 50%;
+	height: 10%;
+	left: 50%;
+	top: 80%;
+	transform: translateX(-50%);
+	background-color: yellow;
+ }
+
+
+
+.aboutGifs{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translateX(-50%);
+	width: 100px;
+
+}
+
+
+.aboutLines{
+	position: absolute;
+	transform: translateX(-50%);
+	top: 15% ;
+	margin-top: 100px;
+	height: 4px;
+	width: 100px;
+}
+
+.aboutUsContainer{
+	position: relative;
+	width: 100%;
+	height: 10%;
+	top: 15%;
+	
+}
+
+.aboutUs{
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-family: "Adam";
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.aboutUs::after{
+    content:'';
+    position:absolute;
+    width:65px;
+    height:1px;
+    background:#000;
+    bottom:0;
+    left:0;
+    right:0;
+	top: 75px;
+    margin:auto;
+}
+
+.aboutDescription{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	font-family: "Adam";
+	margin-top: 15%;
+	padding-bottom: 5%;
+	height: 10%;
+}
+
+
+.aboutText{
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50% , -60%);
+	font-family: "Adam";
+	font-size: 0.8em;
+}
+
+
+
+/******************* SHOWCASE SECTION***********************/
+
+
+.showcaseButton{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100px;
+}
+
+.showcase{
+	position: relative;
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #f3f3f3;
+	font-family: "Adam";
+}
+.showcaseHeadline{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+		
+}
+h7{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Adam";
+	font-weight: bold;
+	font-size: 1.5em;
+	
+	
+}
+
+.showcaseBoxes{
+	position: relative;
+	width: 15%;
+	float: left;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+.showcaseImage{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	transition: 0.3s;
+	border-radius: 500px;
+}
+
+.showcaseImage:hover{
+	border-radius: 0px;
+	
+}
+
+
+
+/************* CONTACT SECTION ***************/
+
+.contact{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+
+.contactHead{
+	top: 0;
+	position: relative;
+	width: 100%;
+	padding-top: 10%;
+	float: left;
+	
+}
+
+.contactTitle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Revelstoke";
+	font-size: 2em;
+	
+}
+
+.contactInfo{
+	position: relative;
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	
+}
+
+.contactName{
+	position: relative;
+	width: 49%;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+	
+	
+	}
+
+.contactEmail{
+	position: relative;
+	width: 49%;
+	margin-left: 0.8%;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+}
+
+.contactCompany{
+	position: relative;
+	width: 49%;
+	float: left;
+	margin-top: 5%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+	font-family: "Revelstoke";
+	
+	
+	
+}
+
+.contactSubject{
+	position: relative;
+	width: 49%;
+	height: 2em;
+	margin-left: 0.8%;
+	float: left;
+	margin-top: 5%;
+	text-align: center;
+	background: white;
+	cursor: pointer;
+	border: solid 1px #D3D3D3; 
+	
+}
+
+.subjectPlaceholder{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: "Revelstoke";
+	transform: translate(-50% , -50%);
+	
+}
+
+.contactSubject:after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-width: 6px 0px 6px 6px;
+	right: 1%;
+	top: 50%;
+	transform: translateY(-50%);
+	border-style: solid;
+	border-color: transparent black;
+}
+
+.subjectSelection{
+	position: absolute;
+	top: 100;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	
+	background: blue;
+	
+	opacity: 0;
+	pointer-events: none;
+}
+
+.contactSubject .subjectSelection li a{
+	display: block;
+	text-decoration: none;
+}
+
+.contactSubject.active .subjectSelection{
+	opacity: 1;
+	pointer-events: auto;
+	
+	
+}
+
+.contactSubject.active:after{
+	border-width: 6px 6px 0 6px ;
+}
+
+
+.contactMessage{
+	position: relative;
+	float: left;
+	text-align: center;
+	font-family: "Revelstoke";
+	width: 99%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-top: 5%;
+	
+	
+}
+
+
+
+
+
+/*************** PORTFOLIO SECTION ******************/
+		
+.portfolioContainer{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	float: left;
+	
+	
+}
+
+.logosSection{
+	position: relative;
+	float: left;
+	padding-top: 10%;
+	width: 100%;
+}
+
+.coverSection{
+	position: relative;
+	float: left;
+	padding-top: 5%;
+	width: 100%;
+}
+
+h8{
+	position: relative;
+	color: black;
+	font-family: "Revelstoke";
+	font-size: 2em;
+	margin-left: 12.5%;
+}
+
+
+
+.filterButtons{
+	
+	position: absolute;
+	top: 3%;
+	padding-bottom: 5%;
+	left: 50%;
+	height: 100px;
+	transform: translateX(-50%);
+	
+}
+
+.graphicsButton{
+	border-radius: 0px;
+	
+}
+
+.project{
+	position: relative;
+	float: left;
+	width: 15%;
+	height: 45%;
+	margin-left: 5%;
+	
+	margin-top: 5%;
+	
+}
+
+.project2{
+	position: relative;
+	float: left;
+	width: 35%;
+	height: 45%;
+	margin-left: 5%;
+	
+	margin-top: 5%;
+	
+}
+
+.project:hover .projectDetails{
+	border-bottom: solid 1px red;
+	height: 100%;
+	
+}
+
+.projectImage{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	float: left;
+	
+}
+
+.projectTitle{
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-left: 2%;
+	
+	font-size: 0.8em;
+	color: #0078ff;
+	top: 2%;
+	text-align: center;
+	font-family: "Adam";
+	
+}
+
+.projectDetails{
+	position: relative;
+	top: 5%;
+	width: 98%;
+	left: 2%;
+	font-size: 0.8em;
+	color: black;
+	text-align: center;
+	font-family: "Adam";
+	
+}
+
+
+/******************** CONTACT *******************/
+
+#contact{
+	position: relative;
+	width: 100%;
+	float: left;
+	
+}
+
+
+iframe{
+	border: none;
+}
+
+
+/********** FOOTER *************/
+
+#footer{
+	position: relative;
+	float: left;
+	height: auto;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	
+	
+	background-color: #3c3c3c;
+	
+	
+}
+
+
+
+.footerLogo{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 2% auto;
+	
+}
+
+.footerLogo2{
+	width: 50px;
+	height: 50px;
+	
+}
+
+.footerLinks{
+	position: relative;
+	width: 100%;
+	height: 33.3%;
+}
+
+.footerLinks2{
+	color: white;
+	font-size: 0.7em;
+}
+
+.footerCr{
+	position: relative;
+	width: 100%;
+	height: 33.3%;
+}
+
+.copyRight{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+/****************** TV SCREEN *******************/
+
+/***** .links{ padding-top: 10 or 11} *****/
+/***** .overlayText{ top:51 or 52} *****/
+/***** .aboutBoxes{ height:40 or 50} *****/
+
+
+
+@media only screen and (max-width: 600px)  {
+	.aboutBoxes{
+		width: 100%;
+	}
+	
+	.videoText{
+		width: 100%;
+		left: 0;
+		transform: translate(0%,-50%);
+	}
+	
+	.videoText1{
+		font-size: 0.7em;
+	}
+	
+	.videoText2{
+		font-size: 1.5em;
+	}
+	
+	.videoText3{
+		font-size: 0.7em;
+	}
+	
+	.showcaseBoxes{
+		padding-top: 10%;
+		margin-left: 10%;
+		width: 80%;
+	}
+	
+	.aboutDescription{
+		margin-top: 35%;
+	}
+	
+	.aboutText{
+		top: 70%;
+	}
+	
+	.links3{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		
+	}
+	
+	
+	/********* PORTFOLIO *************/
+	
+	.links2{
+		top: 25%;
+		padding: 0;
+		    width: 90%;
+    left: 5%;
+    font-size: 0.9em;
+		
+		
+	}
+	
+	.logosSection{
+		padding-top: 20%;
+	}
+	
+	.project{
+		width: 75%;
+		height: 70%;
+		margin-left: 12.5%;
+	}
+	
+	
+	
+	.footerLinks2{
+		font-size: 0.6em;
+	}
+	
+	/************* MENU ******************/
+	
+	.menuIcon{
+		display: block;
+	}
+	
+	
+	.links{
+		position: absolute;
+		width: 50%;
+		border: 3px solid black;
+		top: 150px;
+    	padding: 20px;
+    	background: white;
+    	left: 20%;
+		display: none;
+	}
+	
+	.links li{
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		float: left;
+		
+	}
+	
+	.showMenu{
+		display: block;
+	}
+	
+	.seeButton,.quoteButton{
+		font-size: 0.8em;
+	}
+	
+	.seeButton2{
+		width: 80%;
+		margin: 0px;
+	}
+	
+	
+	
+}
