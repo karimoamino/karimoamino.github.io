@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face{
+	font-family: Revelstoke;
+    src: url(fonts/RevelstokeRegular.ttf);
+}
+
+@font-face{
+	font-family: RevelstokeCondensed;
+    src: url(fonts/RevelstokeCondensed.ttf);
+}
+
+@font-face{
+	font-family: RevelstokeBold;
+    src: url(fonts/RevelstokeBold.ttf);
+}
+
+@font-face{
+	font-family: Adam;
+    src: url(fonts/adam.otf);
+}
